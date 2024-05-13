@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+.container{
+    background: lavender;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container nav ul li a{
+    text-decoration: none;
+    color: #777;
+}
+nav{
+    background:#fff;
+    border-radius:50px;
+    padding:10px;
+    box-shadow:0 50px 20px -20px rgba(0,0,0,0.4)
+    }
+    nav ul li{
+       list-style: none;
+       display:inline-block;;
+       padding:13px 35px;
+     margin:10px;
+     font-size: 500;
+     color:#777;
+    cursor :pointer;
+    position:relative;
+    z-index:2;
+    transition:color 0.5s;
+    }
+    nav ul li::after{
+        content:'';
+        background-color: purple;
+        width:100%;
+        height:100%;
+        border-radius:30px;
+        position:absolute;
+        top:100%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:-1;
+            opacity:0;
+        transition:top 0.5s,opacity 0.5s}
+        nav ul li a:hover{
+            color:#fff;
+
+        }
+ nav ul li:hover::after{
+    top:50%;
+    opacity:1;
+ }
+ nav
+{
+   position: fixed;
+   top: 0;
+}
+body {
+    position: relative;
+    margin: 0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  img{
+    height: 40px;
+    position: bottom;
+
+  }
+  .logo{
+    position:left;
+    height:100%;
+    width:100%;
+  }
+  .home .video-container video{
+    z-index: -1;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home{
+    position:relative;
+    z-index: 0;
+    min-height: 100VH;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.home .content{
+    text-align: center;
+}
+.home .content h1{
+    color:rgb(216, 112, 192);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 120px;
+} 
+.home .content p{
+  color:black;
+  font-size: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+} 
+img{
+  height: 100%;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  color:black;
+  font-size:50px; 
+ 
+
+}
+#para{
+  font-size: medium;
+}
